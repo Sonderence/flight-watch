@@ -1,0 +1,10 @@
+[functions.flight-worker]
+# Handler checks a private x-worker-secret. This is never an unauthenticated worker.
+verify_jwt = false
+
+[functions.flight-email-worker]
+verify_jwt = false
+
+[functions.flight-dashboard]
+# A dedicated read-only token is checked by the handler.
+verify_jwt = false

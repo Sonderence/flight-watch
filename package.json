@@ -1,0 +1,23 @@
+{
+  "name": "flight-disruption-tracker",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "demo": "node src/lookup.mjs",
+    "changes": "node src/changes-demo.mjs",
+    "email:preview": "node src/email-demo.mjs",
+    "build:dashboard": "node scripts/build-dashboard.mjs",
+    "ui": "node scripts/serve-ui.mjs",
+    "db:demo": "node --env-file=.env src/database-demo.mjs",
+    "build:worker": "node scripts/build-worker.mjs",
+    "track": "node --env-file=.env src/track.mjs",
+    "test": "node --test",
+    "lookup": "node --env-file=.env src/lookup.mjs"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "devDependencies": {
+    "@electric-sql/pglite": "^0.5.12"
+  }
+}
